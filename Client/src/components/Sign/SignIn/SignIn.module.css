@@ -1,0 +1,146 @@
+.signInContainer {
+  position: absolute;
+  left: 0;
+  padding: 5px;
+  margin-left: 12px;
+  /* border: 1px solid green; */
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  top: 10%;
+  z-index: 2;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  transition: 0.5s border, 0.5s background-color;
+}
+
+.signInContainer.rightPanelActive {
+  transform: translateX(81.7%);
+  opacity: 0;
+}
+
+.logoCover {
+  position: relative;
+  left: 17%;
+
+  background-image: linear-gradient(to bottom, rgb(94, 92, 92), white);
+  background-clip: text;
+  color: transparent;
+  max-height: 15%;
+  font-weight: bold;
+  font-size: 30px;
+  width: 110%;
+  display: flex;
+  align-items: center;
+  flex: 70%;
+}
+
+.logo {
+  position: relative;
+  right: 15%;
+  object-fit: contain;
+  width: 50%;
+  height: 50%;
+}
+
+.signInContainer h3 {
+  font-weight: 200;
+}
+
+.signInContainer input:focus {
+  outline: none;
+  border: 1px solid #240370;
+  background-color: #e0d4fd;
+}
+
+.signInContainer p {
+  margin-top: -17px;
+  margin-bottom: 6%;
+  font-size: 11px;
+  margin-left: 4.5%;
+  opacity: 50%;
+}
+
+.signInContainer h4 {
+  font-weight: 200;
+  font-size: 15px;
+  margin-left: 2%;
+  margin-top: -0.1px;
+  color: #c1beed;
+}
+.signInContainer h7 {
+  font-weight: 200;
+  opacity: 75%;
+  font-size: 12px;
+  margin-left: 2%;
+  margin-top: -0.1px;
+  color: #c1beed;
+}
+
+.formInputs {
+  /* border: 1px solid black; */
+  position: relative;
+  top: 2%;
+
+  padding: 2%;
+  width: 95%;
+  display: flex;
+
+  flex-direction: column;
+}
+
+label {
+  padding: 2px;
+  color: #706f7d;
+}
+
+input {
+  border-radius: 4px;
+  padding: 5px;
+  height: 28px;
+  border: none;
+  box-shadow: 0px 14px 32px rgba(118, 118, 118, 0.25);
+  margin-bottom: 3%;
+  width: 95%;
+}
+
+.formActions {
+  /* border: 1px solid red; */
+  position: relative;
+  top: 5%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signInButton {
+  width: 32%;
+  padding: 3%;
+  border-radius: 17px;
+  background-color: #817cc4;
+  text-decoration: none;
+  color: white;
+}
+
+.formInputs.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.formInputs.invalid input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.formInputs.invalid p {
+  position: relative;
+  top: 12px;
+  right: 4%;
+  color: red;
+}
+
+.signInButton:disabled {
+  cursor: not-allowed;
+}

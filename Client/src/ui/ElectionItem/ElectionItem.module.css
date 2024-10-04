@@ -1,0 +1,80 @@
+.itemCover {
+  /* border: 2px solid black; */
+  display: flex;
+  height: 90%;
+  border-bottom: 1px solid black;
+  transition: 1s height, 1s opacity;
+  padding: 1%;
+}
+
+.itemCover:hover {
+  height: 100%;
+  cursor: pointer;
+}
+
+.infoCover {
+  /* border: 1px solid red; */
+  flex: 85%;
+}
+
+.itemActions {
+  display: flex;
+  /* border: 1px solid black; */
+  flex: 15%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.upComponent,
+.downComponent {
+  height: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.downComponent {
+  /* border: 1px solid orange; */
+  width: 100%;
+}
+
+.upComponent {
+  /* border: 1px solid green; */
+  width: 100%;
+}
+
+.upComponent h4 {
+  position: relative;
+  /* border: 1px solid black; */
+  height: 100%;
+  top: 20%;
+  flex: 50%;
+}
+
+.upComponent h5 {
+  /* border: 1px solid red; */
+  flex: 25%;
+}
+
+.downComponent h4 {
+  /* border: 1px solid red; */
+  height: 100%;
+  font-size: 12px;
+  position: relative;
+  flex: 50%;
+  color: #aeadb8;
+}
+
+.downComponent h5 {
+  flex: 25%;
+  position: relative;
+  bottom: 16%;
+}
+
+.icon {
+  position: relative;
+  bottom: 1%;
+  left: 3%;
+  font-size: 15px !important;
+}

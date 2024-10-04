@@ -1,0 +1,121 @@
+.imageCover {
+  /* border: 1px solid red; */
+  height: 70vh;
+  display: flex;
+  background-image: url("../../../public/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  box-shadow: inset 0 0 0 2000px rgba(30, 29, 29, 0.7);
+  animation: image-appears 1s ease-in-out forwards;
+}
+
+@keyframes image-appears {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+.body {
+  /* border: 1px solid orange; */
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  animation: content-animation 1s ease-in-out;
+}
+
+.bodyTitle {
+  position: relative;
+  width: 30%;
+  left: 5%;
+  top: 15%;
+  color: rgb(219, 219, 217);
+}
+
+.bodyContent {
+  position: relative;
+  text-align: justify;
+  width: 35%;
+  left: 5%;
+  top: 20%;
+  color: rgb(214, 214, 214);
+}
+
+.startButton {
+  width: 12%;
+  bottom: 150%;
+  left: 5%;
+  height: 100%;
+  background-color: transparent;
+  box-shadow: 0px 14px 18px rgba(60, 60, 60, 0.25);
+  border: 1px solid #e8dbdb;
+  color: #e8dbdb;
+  cursor: pointer;
+  animation: content-animation 1s ease-in-out;
+  transition: background-color 1s, color 1s, width 1s;
+}
+
+.startButton:hover {
+  background-color: #8f8bd0;
+  width: 13%;
+  color: black;
+}
+
+.startButton p {
+  margin-right: 5%;
+}
+
+@keyframes content-animation {
+  from {
+    transform: translateX(-3rem);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.featureCover {
+  box-shadow: inset 0 0 0 2000px rgba(209, 209, 209, 0.7);
+  background-color: white;
+  height: 30vh;
+  display: flex;
+}
+
+.feature {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 33.33%;
+  animation: icon-appears 1s ease-in-out;
+}
+
+.icon {
+  /* width: 100px;
+  height: 100px; */
+  font-size: 7rem !important;
+  opacity: 75%;
+  transition: 1s font-size, 1s opacity !important;
+}
+
+.icon:hover {
+  font-size: 8rem !important;
+  opacity: 100%;
+}
+
+@keyframes icon-appears {
+  from {
+    transform: translateY(3rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

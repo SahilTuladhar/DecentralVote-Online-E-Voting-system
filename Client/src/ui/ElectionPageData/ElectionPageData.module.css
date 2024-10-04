@@ -1,0 +1,77 @@
+.dataBlockCover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+.votes,
+.voters,
+.candidates {
+  width: 100%;
+  max-height: 32%;
+  flex: 33.33%;
+  margin-bottom: 5%;
+  border-radius: 12px;
+  display: flex;
+  animation: data-appears 1s;
+}
+
+@keyframes data-appears {
+  from {
+    transform: translateX(3rem);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.iconCover {
+  flex: 35%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 85px !important;
+  position: relative;
+  left: 16%;
+  opacity: 25%;
+}
+
+.dataContent {
+  flex: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dataContent h1 {
+  position: relative;
+  font-size: 45px;
+  top: 14%;
+  color: antiquewhite;
+}
+.dataContent h2 {
+  position: relative;
+  font-size: 27px;
+  bottom: 8%;
+  right:1%;
+  color: antiquewhite;
+}
+
+.votes {
+  background-color: #5ed93f;
+}
+
+.voters {
+  background-color: #fec22b;
+}
+
+.candidates {
+  background-color: #4e8bd1;
+}

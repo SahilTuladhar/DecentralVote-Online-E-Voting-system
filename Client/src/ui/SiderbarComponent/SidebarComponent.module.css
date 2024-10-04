@@ -1,0 +1,43 @@
+.componentCover {
+  position: relative;
+  left: 10%;
+  padding: 4%;
+  top: 2%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  width: 80%;
+  transition: 1s height, 1s width, 1s opacity, 1s border-bottom, 1s color;
+}
+
+.componentCover:hover {
+  width: 82%;
+  height: 12%;
+  cursor: pointer;
+  opacity: 70%;
+  border-bottom: 1px solid aliceblue;
+  color: #61dafb;
+}
+
+
+
+.icon {
+  font-size: 25px !important;
+  opacity: 80%;
+  flex: 10%;
+  position: relative;
+  top: 3%;
+
+  /* border: 1px solid red; */
+}
+
+.componentCover p {
+  position: relative;
+  font-size: 18px;
+  flex: 90%;
+  font-weight: 300;
+  left: 5%;
+  /* border: 1px solid yellow; */
+}

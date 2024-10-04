@@ -1,0 +1,141 @@
+.candidatePageCover {
+  height: 90vh;
+  display: flex;
+  margin-left: 25%; /* Adjusting for the fixed sidebar */
+}
+
+.pageContent {
+  height: 94vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+  bottom: 5%;
+  right: 6%;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+
+.pageContent h2 {
+  position: relative;
+  left: 5%;
+  width: 80%;
+  color: #4d5462;
+  font-weight: 500;
+  padding: 3px;
+  flex: 5%;
+  border-bottom: 2px solid #4d5462;
+}
+
+.imageCover {
+  flex: 15%;
+  position: relative;
+  bottom: 5%;
+  margin: 10px auto;
+  width: 60%;
+  max-height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: image-appears 1s ease-in-out;
+}
+
+@keyframes image-appears {
+  from {
+    transform: translateY(5rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.imageCover img {
+  object-fit: contain;
+  height: 80%;
+}
+
+.addCandidateForm {
+  /* border: 1px solid green; */
+  flex: 80%;
+  position: relative;
+  bottom: 18%;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 60%;
+  height: 100%;
+  border-radius: 22px;
+  padding: 0.5% 2.5% 2% 2.5%;
+  background-color: #d0cee1;
+}
+
+.addCandidateForm p {
+  position: relative;
+  font-size: 12px;
+  font-weight: 100;
+  opacity: 50%;
+}
+
+.addCandidateForm label {
+  color: #938af7;
+  position: relative;
+  bottom: 2%;
+}
+
+.addCandidateForm input {
+  position: relative;
+  transition: 1s border, 1s background-color;
+  outline: none;
+  z-index: 1;
+}
+
+.addCandidateForm input:hover {
+  outline: none;
+  border: 1px solid #240370;
+  background-color: #e0d4fd;
+}
+
+.addCandidateForm.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.addCandidateForm.invalid input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.errorMessage {
+  position: relative;
+  font-size: 12px;
+  left: 1%;
+  margin-top: -10px;
+  color: red;
+  z-index: 0;
+  animation: error-message 0.5s ease-in-out;
+}
+
+@keyframes error-message {
+  from {
+    transform: translateY(-1.5rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.formActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addCandidateButton {
+  position: relative;
+  top: 10px;
+  height: 35px;
+  width: 120px;
+  background-color: #938af7;
+  border: none;
+  color: #ddd9d9;
+}

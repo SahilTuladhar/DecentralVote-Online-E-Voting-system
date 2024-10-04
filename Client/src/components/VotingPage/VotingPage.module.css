@@ -1,0 +1,53 @@
+.voterElectionPageCover {
+  height: 90vh;
+  display: flex;
+}
+
+.pageContent {
+  width: 80%;
+  position: relative;
+  bottom: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+}
+
+.contentCover {
+  position: relative;
+  top: 40%;
+  display: flex;
+  height: 99%;
+}
+
+.errorMessage {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  height: 0%;
+  top: 50%;
+  font-size: 12px;
+  color: rgb(205, 96, 96);
+}
+
+.pageContent h2 {
+  position: relative;
+  margin-bottom: -20%;
+  /* border-bottom: 2px solid #282c34; */
+  height: 6%;
+  width: 90%;
+  top: -5%;
+}
+
+/* .pageContent.loading {
+  align-items: center;
+  justify-content: center;
+} */
+
+.pageContent.loading p {
+  font-size: 30px;
+  font-weight: 500;
+}

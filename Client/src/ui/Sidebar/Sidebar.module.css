@@ -1,0 +1,29 @@
+.sidebarCover {
+  height: 100vh;
+  position: fixed;
+  width: 20%;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: aliceblue;
+}
+
+@keyframes sidebar-appears {
+  from {
+    transform: translateX(-3rem);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.sidebarContents {
+  position: relative;
+  height: 90vh;
+  top: 10%;
+  animation: sidebar-appears 1s;
+}

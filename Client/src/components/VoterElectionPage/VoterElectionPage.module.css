@@ -1,0 +1,130 @@
+.voterElectionPageCover {
+  height: 90vh;
+  display: flex;
+}
+
+.electionPageCover {
+  height: 90vh;
+  display: flex;
+}
+
+.pageContent {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+}
+
+.pageContentLeft {
+  display: flex;
+  position: relative;
+  bottom: 3.5%;
+  flex-direction: column;
+  flex: 75%;
+}
+
+.pageContentRight {
+  display: flex;
+  position: relative;
+  right: 1%;
+  flex-direction: column;
+  flex: 25%;
+  background-color: rgb(225, 226, 226);
+  border-radius: 15px;
+}
+
+.pageContent h2 {
+  color: #4d5462;
+  font-weight: 500;
+  position: relative;
+  bottom: 3%;
+  left: 5%;
+}
+
+.electionInfo {
+  position: relative;
+  bottom: 5%;
+  width: 90%;
+  height: 21%;
+  margin: auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(225, 226, 226);
+}
+
+.electionInfoUp {
+  /* border: 1px solid black; */
+  padding: 1%;
+  height: 30%;
+}
+
+.electionInfoUp h2 {
+  font-weight: 500;
+  position: relative;
+  left: 1%;
+  color: #4d5462;
+}
+
+.electionInfoDown {
+  position: relative;
+  display: flex;
+  left: 3%;
+  width: 95%;
+  align-items: center;
+  justify-content: space-between;
+  top: 10%;
+}
+
+.electionInfoDown h3 {
+  font-weight: 100;
+  opacity: 80%;
+}
+
+.electionDate {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 6%;
+  font-weight: bold;
+  border-radius: 12px;
+  color:#4d5462;
+  width: 32%;
+  height: 55%;
+  background-color: #a7a4e0;
+  color: rgb(50, 50, 50);
+}
+
+.icon {
+  font-size: 18px !important;
+  position: relative;
+  right: 5%;
+  opacity: 80%;
+}
+
+.lineChartCover {
+  position: relative;
+  height: 60vh; /* Adjust the height as needed */
+  margin: auto;
+  border-radius: 15px;
+  width: 90%;
+  bottom: 2%;
+  background-color: rgb(225, 226, 226);
+}
+
+.canvas,
+.LineChart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.infoBlocks {
+  padding: 5%;
+}
+
+.infoBlocks h2 {
+  color:aliceblue;
+}

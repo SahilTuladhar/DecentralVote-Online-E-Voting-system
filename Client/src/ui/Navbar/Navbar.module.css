@@ -1,0 +1,54 @@
+.navbar {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  background-image: linear-gradient(to bottom, rgb(158, 143, 143), white);
+  background-clip: text;
+  position: relative;
+  z-index: 2;
+  color: #282c34;
+}
+
+.logoCover {
+  position: relative;
+  left: 2%;
+  background-image: linear-gradient(to bottom, rgb(94, 92, 92), white);
+  background-clip: text;
+  color: transparent;
+  height: 100%;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  flex: 70%;
+}
+
+.logo {
+  position: relative;
+  right: 15%;
+  object-fit: contain;
+  width: 50%;
+  height: 50%;
+}
+
+.navActions {
+  /* border: 1px solid red; */
+  position: relative;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  color: black;
+  /* flex: 0 0 auto; */
+}
+
+.logoutBtn {
+  width: 100px;
+  height: 30%;
+  background-color: transparent;
+  border: none;
+ 
+
+}
+

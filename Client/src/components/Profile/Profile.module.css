@@ -1,0 +1,199 @@
+.pageCover {
+  height: 90vh;
+  display: flex;
+}
+
+.pageContent {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageContent h2 {
+  position: relative;
+  border-bottom: 2px solid #282c34;
+  height: 6%;
+  width: 90%;
+  top: -5%;
+}
+
+.pageUpContent {
+  position: relative;
+  bottom: 5%;
+  left: 9%;
+  flex: 30%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  height: 100%;
+  width: 100%;
+  padding: 2px;
+}
+
+.imageCover {
+  position: relative;
+
+  margin: 10px;
+  border-radius: 50%;
+  height: 100%;
+  width: 20%;
+  animation: image-appears 1s;
+  /* border: 1px solid green; */
+}
+
+@keyframes image-appears {
+  to {
+    transform: translateX(0rem);
+  }
+
+  from {
+    transform: translateX(-15rem);
+  }
+}
+
+.imageBefore {
+  height: 101%;
+  position: relative;
+  right: 10%;
+  width: 120%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.imageAfter {
+  width: 230px; /* Set a fixed width */
+  height: 230px; /* Set a fixed height */
+  object-fit: cover;
+  border-radius: 50%; /* Maintain circular shape */
+}
+
+.userInfo {
+  /* border: 1px solid black; */
+  background-color: #e5e4f5;
+  position: relative;
+  display: flex;
+  left: 3%;
+  border-radius: 30px;
+  width: 50%;
+  height: 90%;
+  flex-direction: column;
+  box-shadow: 0px 10px 20px rgba(134, 134, 134, 0.25);
+}
+
+.uploadBtn {
+  position: relative;
+  width: 20%;
+  min-height: 15%;
+  bottom: 25%;
+  left: 5%;
+  color: #282c34;
+  background-color: #a5a2d8;
+  transition: background-color 1s;
+}
+
+.uploadBtn:hover {
+  cursor: pointer;
+  background-color: #918fc3;
+}
+
+.userInfo h1 {
+  font-weight: 500;
+  position: relative;
+  left: 3%;
+}
+
+.userInfo h3 {
+  font-size: 20px;
+  position: relative;
+  bottom: 15%;
+  left: 3%;
+}
+
+.userInfo h4 {
+  position: relative;
+  bottom: 27%;
+  left: 4%;
+  font-weight: 500;
+  opacity: 50%;
+}
+
+.pageDownContent {
+  position: relative;
+  left: 5%;
+  flex: 60%;
+  display: flex;
+  height: 90%;
+  padding-left: 20px;
+  width: 85%;
+  max-width: 85%;
+}
+
+.myElections {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 22px;
+  top: 3%;
+  width: 50%;
+  height: 85%;
+  max-height: 100px;
+  min-height: 85%;
+  margin: 10px;
+  background-color: #e5e4f5;
+  overflow-y: scroll;
+  box-shadow: 0px 10px 20px rgba(134, 134, 134, 0.25);
+}
+
+.myElections a {
+  position: relative;
+  left: 5%;
+}
+
+.myElections::-webkit-scrollbar {
+  width: 2px;
+}
+
+.myElections h3,
+.partElections h3 {
+  position: relative;
+  left: 2%;
+  top: 5%;
+  font-weight: 500;
+  color: #282c34;
+}
+
+.partElections {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 22px;
+  top: 3%;
+  width: 50%;
+  height: 85%;
+  max-height: 100px;
+  min-height: 85%;
+  margin: 10px;
+  background-color: #e5e4f5;
+  overflow-y: scroll;
+  box-shadow: 0px 10px 20px rgba(134, 134, 134, 0.25);
+}
+
+.partElections a {
+  position: relative;
+  left: 5%;
+}
+
+.partElections::-webkit-scrollbar {
+  width: 2px;
+}
+
+.pageContent h2 {
+  color: #4d5462;
+  font-weight: 500;
+  position: relative;
+  bottom: 3%;
+  left: 5%;
+}

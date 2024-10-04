@@ -1,0 +1,186 @@
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #282c34;
+  /* box-shadow: inset 0 0 0 2000px rgba(77, 76, 76, 0.7);
+  background-image: url("C:\Users\Nitro 5\Desktop\decentral-vote\public\images\vote.jpg"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.formContent {
+  /* border: 1px solid red; */
+
+  position: relative;
+  bottom: 30px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: content-appears 1s ease-in-out;
+}
+
+@keyframes content-appears {
+  from {
+    transform: translateY(-1.5rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.logo {
+  position: relative;
+  width: 20%;
+  height: 25%;
+  object-fit: contain;
+  transition: 1s height;
+  /* border: 1px solid red; */
+}
+
+.logo:hover {
+  height: 27%;
+}
+
+.formContent p {
+  position: relative;
+  font-size: 20px;
+  left: 0.5%;
+  opacity: 40%;
+  bottom: 2%;
+  font-weight: 100;
+  color: #d4c9c9;
+}
+
+.electionList {
+  position: relative;
+  bottom: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding: 1%;
+}
+
+.electionList button {
+  position: relative;
+  left: 32%;
+  border: none;
+  color: #282c34;
+  background-color: rgb(137, 128, 230);
+  height: 45%;
+  width: 15%;
+}
+
+.electionList p {
+  position: relative;
+  left: 7.5%;
+  color: rgb(222, 221, 219);
+}
+
+.formContainer {
+  /* border: 1px solid black; */
+  position: relative;
+  bottom: 8%;
+  border-radius: 22px;
+  background-color: #3d424c;
+  opacity: 90%;
+  height: 70%;
+  width: 60%;
+  display: flex;
+  padding: 2%;
+  flex-direction: column;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.formInputs {
+  flex: 85%;
+}
+
+.formDates {
+  display: flex;
+}
+
+.formDate {
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+}
+
+.dateInput {
+  width: 90%;
+}
+
+.timezoneInput {
+  width: 90%;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.formActions {
+  flex: 15%;
+}
+
+.formInputs input {
+  transition: 1s border, 1s background-color;
+  outline: none;
+}
+
+.formInputs input:hover {
+  outline: none;
+  border: 1px solid #240370;
+  background-color: #e0d4fd;
+}
+
+.formInputs.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.formInputs.invalid input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.formInputs.invalid p {
+  position: relative;
+  font-size: 12px;
+  margin-top: -10px;
+  color: red;
+}
+
+.formInputs label {
+  color: #938af7;
+}
+
+.formInputs label:active,
+.formInputs label:hover {
+  outline: none;
+}
+
+.formInput {
+  margin-top: 5px;
+}
+
+.formActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+}
+
+.createButton {
+  background-color: rgb(137, 128, 230);
+  color: #282c34;
+  height: 100%;
+  position: relative;
+  top: 15px;
+  padding: 1.5%;
+  border: none;
+  width: 18%;
+  text-decoration: none;
+}

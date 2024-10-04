@@ -1,0 +1,46 @@
+.candidateListPageCover {
+  height: 90vh;
+  display: flex;
+}
+
+.pageContent {
+  width: 100%;
+  display: flex;
+  padding: 5%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+}
+
+.pageContent.loading {
+  align-items: center;
+  justify-content: center;
+}
+
+.contentCover {
+  position: relative;
+  bottom: 5%;
+  right: 20%;
+  display: flex;
+  height: 99%;
+  width: 100%;
+}
+
+.contentCover.noData {
+  align-items: center;
+  justify-content: center;
+}
+
+.contentCover.noData p {
+  font-size: 30px;
+  font-weight: 500;
+  border-radius: 22px;
+  background-color: #c1beed;
+  color: #282c34;
+  padding: 20px;
+}
+
+.pageContent h2 {
+  position: relative;
+  bottom: 20%;
+}

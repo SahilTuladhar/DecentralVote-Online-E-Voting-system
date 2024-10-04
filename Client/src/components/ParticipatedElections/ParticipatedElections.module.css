@@ -1,0 +1,72 @@
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #282c34;
+  /* box-shadow: inset 0 0 0 2000px rgba(77, 76, 76, 0.7);
+  background-image: url("C:\Users\Nitro 5\Desktop\decentral-vote\public\images\vote.jpg"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.formContent {
+  /* border: 1px solid red; */
+  position: relative;
+  bottom: 30px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: content-appears 1s ease-in-out;
+}
+
+@keyframes content-appears {
+  from {
+    transform: translateY(-1.5rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.logo {
+  position: relative;
+  width: 20%;
+  height: 25%;
+  object-fit: contain;
+  transition: 1s height;
+  /* border: 1px solid red; */
+}
+
+.logo:hover {
+  height: 27%;
+}
+
+.formContainer {
+  /* border: 1px solid black; */
+  position: relative;
+  top: 5%;
+  border-radius: 22px;
+  color: #c6c2f8;
+  background-color: #4e5665;
+  opacity: 90%;
+  height: 70%;
+  width: 60%;
+  display: flex;
+  padding: 1%;
+  flex-direction: column;
+  overflow-y: scroll;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.formContainer.loading {
+  align-items: center;
+  justify-content: center;
+}
+
+.formContainer::-webkit-scrollbar {
+  width: 2px;
+}

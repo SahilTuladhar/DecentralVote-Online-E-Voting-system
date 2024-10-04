@@ -1,0 +1,14 @@
+.chart {
+  height: 100%;
+
+  border-radius: 22px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Rounded corners for the container */
+
+  /* Optional: Create a mask div for rounded corners
+  mask-image: linear-gradient(to bottom, transparent 10%, black),
+    linear-gradient(to bottom, transparent 10%, black);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 10%, black),
+    linear-gradient(to bottom, transparent 10%, black); */
+}

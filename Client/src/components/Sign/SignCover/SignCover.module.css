@@ -1,0 +1,115 @@
+.signBody {
+  background-color: #34404f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  opacity: 40%;
+  font-weight: 400;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  /* border: 1px solid black; */
+  border-radius: 15px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background: #34404f;
+  position: relative;
+  /* bottom: 20px; */
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 600px;
+  margin: 50px auto;
+}
+
+.overlayContainer {
+  /* border: 1px solid red; */
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  overflow: hidden;
+  left: 45.1%;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.container.rightPanelActive .overlayContainer {
+  transform: translateX(-82.5%);
+}
+
+.overlay {
+  position: relative;
+  background: linear-gradient(to right, #34404f, #64989f);
+  /* background-image: url("C:\Users\Nitro 5\Desktop\decentral-vote\src\images\vote1.jpg"); */
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+  display: flex;
+  border-radius: 15px;
+  /* border: 2px solid rebeccapurple; */
+  height: 100%;
+  width: 200%;
+  left: -100%;
+  transform: translateX(0%);
+  transition: transform 0.6s ease-in-out;
+}
+
+.container.rightPanelActive .overlay {
+  transform: translateX(50%);
+}
+
+.overlayPanel {
+  position: relative;
+  /* border: 2px solid green; */
+  height: 100%;
+  width: 50%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftOverlay button,
+.rightOverlay button {
+  width: 30%;
+  background-color: transparent;
+  height: 7%;
+  border: 1px solid #e8dbdb;
+  color: #e8dbdb;
+  margin-left: 5px;
+  transition: background-color 1s;
+}
+
+.leftOverlay button:hover,
+.rightOverlay button:hover {
+  background-color: #817cc4;
+}
+
+.leftOverlay p,
+.rightOverlay p {
+  color: #c1beed;
+}
+
+.logo {
+  position: relative;
+  width: 50%;
+  height: 25%;
+  object-fit: contain;
+  /* border: 1px solid red; */
+}
+
+.coverButton {
+  color: white;
+}
